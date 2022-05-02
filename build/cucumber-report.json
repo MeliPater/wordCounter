@@ -1,0 +1,30 @@
+
+@stories @scenario1
+Scenario: check the number of words in the assigned sentence      [90m# src/test/resources/features/wordCounter.feature:6[0m
+  [32mGiven [0m[32maccess to the WordCounter page[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()[0m
+  [32mWhen [0m[32minsert the sentence [0m[32m[1m"Oracion de Prueba Oracion de Oracion"[0m [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)[0m
+  [32mThen [0m[32mthe number of words must be [0m[32m[1m"6"[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theNumberOfWordsMustBe(java.lang.String)[0m
+
+@stories @scenario2
+Scenario: check the number of characters in the assigned sentence [90m# src/test/resources/features/wordCounter.feature:10[0m
+  [32mGiven [0m[32maccess to the WordCounter page[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()[0m
+  [32mWhen [0m[32minsert the sentence [0m[32m[1m"Oracion de Prueba Oracion de Oracion"[0m [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)[0m
+  [32mThen [0m[32mthe number of characters must be [0m[32m[1m"36"[0m                      [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theNumberOfCharactersMustBe(java.lang.String)[0m
+
+@stories @scenario3
+Scenario: check the order of Keyword Density section first word   [90m# src/test/resources/features/wordCounter.feature:14[0m
+  [32mGiven [0m[32maccess to the WordCounter page[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()[0m
+  [32mWhen [0m[32minsert the sentence [0m[32m[1m"Oracion de Prueba Oracion de Oracion"[0m [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)[0m
+  [32mThen [0m[32mthe most repeated first word must be [0m[32m[1m"Oracion"[0m             [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theMostRepeatedFirstWordMustBe(java.lang.String)[0m
+
+@stories @scenario4
+Scenario: check the order of Keyword Density section second word  [90m# src/test/resources/features/wordCounter.feature:18[0m
+  [32mGiven [0m[32maccess to the WordCounter page[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()[0m
+  [32mWhen [0m[32minsert the sentence [0m[32m[1m"Oracion de Prueba Oracion de Oracion"[0m [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)[0m
+  [32mThen [0m[32mthe second most repeated word must be [0m[32m[1m"de"[0m                 [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theSecondMostRepeatedWordMustBe(java.lang.String)[0m
+
+@stories @scenario5
+Scenario: check the order of Keyword Density section third word   [90m# src/test/resources/features/wordCounter.feature:22[0m
+  [32mGiven [0m[32maccess to the WordCounter page[0m                            [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()[0m
+  [32mWhen [0m[32minsert the sentence [0m[32m[1m"Oracion de Prueba Oracion de Oracion"[0m [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)[0m
+  [32mThen [0m[32mthe third most repeated word must be [0m[32m[1m"Prueba"[0m              [90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theThirdMostRepeatedWordMustBe(java.lang.String)[0m

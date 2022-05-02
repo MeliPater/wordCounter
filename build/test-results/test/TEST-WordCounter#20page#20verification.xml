@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WordCounter page verification" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-05-02T01:52:06" hostname="NEKROSANTE" time="22.582">
+  <properties/>
+  <testcase name="check the number of words in the assigned sentence" classname="WordCounter page verification" time="8.647"/>
+  <testcase name="check the number of characters in the assigned sentence" classname="WordCounter page verification" time="3.893"/>
+  <testcase name="check the order of Keyword Density section first word" classname="WordCounter page verification" time="3.321"/>
+  <testcase name="check the order of Keyword Density section second word" classname="WordCounter page verification" time="3.492"/>
+  <testcase name="check the order of Keyword Density section third word" classname="WordCounter page verification" time="3.229"/>
+  <system-out><![CDATA[
+@stories @scenario1
+Scenario: check the number of words in the assigned sentence      ?[90m# src/test/resources/features/wordCounter.feature:6?[0m
+  ?[32mGiven ?[0m?[32maccess to the WordCounter page?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()?[0m
+  ?[32mWhen ?[0m?[32minsert the sentence ?[0m?[32m?[1m"Oracion de Prueba Oracion de Oracion"?[0m ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe number of words must be ?[0m?[32m?[1m"6"?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theNumberOfWordsMustBe(java.lang.String)?[0m
+
+@stories @scenario2
+Scenario: check the number of characters in the assigned sentence ?[90m# src/test/resources/features/wordCounter.feature:10?[0m
+  ?[32mGiven ?[0m?[32maccess to the WordCounter page?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()?[0m
+  ?[32mWhen ?[0m?[32minsert the sentence ?[0m?[32m?[1m"Oracion de Prueba Oracion de Oracion"?[0m ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe number of characters must be ?[0m?[32m?[1m"36"?[0m                      ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theNumberOfCharactersMustBe(java.lang.String)?[0m
+
+@stories @scenario3
+Scenario: check the order of Keyword Density section first word   ?[90m# src/test/resources/features/wordCounter.feature:14?[0m
+  ?[32mGiven ?[0m?[32maccess to the WordCounter page?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()?[0m
+  ?[32mWhen ?[0m?[32minsert the sentence ?[0m?[32m?[1m"Oracion de Prueba Oracion de Oracion"?[0m ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe most repeated first word must be ?[0m?[32m?[1m"Oracion"?[0m             ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theMostRepeatedFirstWordMustBe(java.lang.String)?[0m
+
+@stories @scenario4
+Scenario: check the order of Keyword Density section second word  ?[90m# src/test/resources/features/wordCounter.feature:18?[0m
+  ?[32mGiven ?[0m?[32maccess to the WordCounter page?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()?[0m
+  ?[32mWhen ?[0m?[32minsert the sentence ?[0m?[32m?[1m"Oracion de Prueba Oracion de Oracion"?[0m ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe second most repeated word must be ?[0m?[32m?[1m"de"?[0m                 ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theSecondMostRepeatedWordMustBe(java.lang.String)?[0m
+
+@stories @scenario5
+Scenario: check the order of Keyword Density section third word   ?[90m# src/test/resources/features/wordCounter.feature:22?[0m
+  ?[32mGiven ?[0m?[32maccess to the WordCounter page?[0m                            ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.access_to_the_word_counter_page()?[0m
+  ?[32mWhen ?[0m?[32minsert the sentence ?[0m?[32m?[1m"Oracion de Prueba Oracion de Oracion"?[0m ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.insert_the_sentence(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mthe third most repeated word must be ?[0m?[32m?[1m"Prueba"?[0m              ?[90m# wordCounter.stepdefinitions.StepDefinitionsWordCounter.theThirdMostRepeatedWordMustBe(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/wordCounter/src/test/resources/features/wordCounter.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+check the number of words in the assigned sentence(wordcounter-page-verification;check-the-number-of-words-in-the-assigned-sentence)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 100.0.4896.60 (resolved driver for Chrome 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Nekrosante\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 51675
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 01, 2022 8:52:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+may. 01, 2022 8:52:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
+may. 01, 2022 8:52:11 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 100 of 97
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+check the number of words in the assigned sentence
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/wordCounter/src/test/resources/features/wordCounter.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+check the number of characters in the assigned sentence(wordcounter-page-verification;check-the-number-of-characters-in-the-assigned-sentence)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 100.0.4896.60 (resolved driver for Chrome 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Nekrosante\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 49368
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 01, 2022 8:52:15 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+may. 01, 2022 8:52:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
+may. 01, 2022 8:52:15 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 100 of 97
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+check the number of characters in the assigned sentence
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/wordCounter/src/test/resources/features/wordCounter.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+check the order of Keyword Density section first word(wordcounter-page-verification;check-the-order-of-keyword-density-section-first-word)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 100.0.4896.60 (resolved driver for Chrome 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Nekrosante\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 51645
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 01, 2022 8:52:19 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+may. 01, 2022 8:52:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
+may. 01, 2022 8:52:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 100 of 97
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+check the order of Keyword Density section first word
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/wordCounter/src/test/resources/features/wordCounter.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+check the order of Keyword Density section second word(wordcounter-page-verification;check-the-order-of-keyword-density-section-second-word)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 100.0.4896.60 (resolved driver for Chrome 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Nekrosante\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 51778
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 01, 2022 8:52:22 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+may. 01, 2022 8:52:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
+may. 01, 2022 8:52:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 100 of 97
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+check the order of Keyword Density section second word
+----------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/wordCounter/src/test/resources/features/wordCounter.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+check the order of Keyword Density section third word(wordcounter-page-verification;check-the-order-of-keyword-density-section-third-word)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 100.0.4896.60 (resolved driver for Chrome 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Nekrosante\.cache\selenium\chromedriver\win32\100.0.4896.60\chromedriver.exe
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 59185
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 01, 2022 8:52:26 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+may. 01, 2022 8:52:26 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
+may. 01, 2022 8:52:26 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 100 of 97
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+check the order of Keyword Density section third word
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>
