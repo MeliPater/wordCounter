@@ -22,23 +22,28 @@ public class StepDefinitionsWordCounter {
         OnStage.theActorInTheSpotlight().attemptsTo(PutIn.textBox(sentence));
     }
     @Then("the number of words must be {string}")
-    public void theNumberOfWordsMustBe(String arg) {
+    public void theNumberOfWordsMustBe(String arg) throws InterruptedException{
+        Thread.sleep(500);
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckWord.toThe(arg)));
     }
     @Then("the number of characters must be {string}")
-    public void theNumberOfCharactersMustBe(String arg) {
+    public void theNumberOfCharactersMustBe(String arg) throws InterruptedException{
+        Thread.sleep(500);
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckCharacters.toThe(arg)));
     }
     @Then("the most repeated first word must be {string}")
-    public void theMostRepeatedFirstWordMustBe(String arg1) {
+    public void theMostRepeatedFirstWordMustBe(String arg1) throws InterruptedException{
+        Thread.sleep(500);
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckKeywordDensityFirst.toThe(arg1)));
     }
     @Then("the second most repeated word must be {string}")
-    public void theSecondMostRepeatedWordMustBe(String arg2) {
+    public void theSecondMostRepeatedWordMustBe(String arg2) throws InterruptedException{
+        Thread.sleep(500);
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckKeywordDensitySecond.toThe(arg2)));
     }
     @Then("the third most repeated word must be {string}")
-    public void theThirdMostRepeatedWordMustBe(String arg3) {
+    public void theThirdMostRepeatedWordMustBe(String arg3) throws InterruptedException{
+        Thread.sleep(500);
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckKeywordDensityThird.toThe(arg3)));
     }
 }
