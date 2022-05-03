@@ -5,9 +5,9 @@ Test suite that automatically validates that https://wordcounter.net/ correctly 
 - The 3 most repeated words with the number of repetitions (KeywordDensitysection)
 
 ## Resources
-IntelliJ IDEA 2021.3.2 (Community Edition)
-Gradle 7.4.1
-Java 1.8.0
+- IntelliJ IDEA 2021.3.2 (Community Edition)
+- Gradle 7.4.1
+- Java 1.8.0
 
 ## Setup and usage
  1. Install Java and Gradle.
@@ -18,4 +18,4 @@ Java 1.8.0
  6. Click **Clone**.
  7. Run project.
  
- 
+ ![image](http://g.recordit.co/5BIhuXfLwp.gif)
