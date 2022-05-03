@@ -19,5 +19,4 @@ Test suite that automatically validates that https://wordcounter.net/ correctly 
  7. Run project.
  
  ### Export Report Tutorial
- 
- ![image](http://g.recordit.co/5BIhuXfLwp.gif)
+ <img src="http://g.recordit.co/5BIhuXfLwp.gif" width=70% height=70%>
