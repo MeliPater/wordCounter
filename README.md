@@ -1,4 +1,4 @@
-# wordCounter Test
+# Automated Test Suite (word Counter)
 Test suite that automatically validates that https://wordcounter.net/ correctly displays:
 - N° of words
 - N° of characters
