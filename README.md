@@ -13,9 +13,11 @@ Test suite that automatically validates that https://wordcounter.net/ correctly 
  1. Install Java and Gradle.
  2. Set environment variables.
  3. From the Welcome screen, select **Get from VCS**.
- 4. In the **Get from Version Control** dialog, specify the URL of the remote repository you want to clone.
+ 4. In the **Get from Version Control** dialog, specify the URL of the remote repository you want to clone (https://github.com/MeliPater/wordCounter.git).
  5. In the **Directory** field, enter the path to the folder where your local Git repository will be created.
  6. Click **Clone**.
  7. Run project.
+ 
+ ### Export Report Tutorial
  
  ![image](http://g.recordit.co/5BIhuXfLwp.gif)
